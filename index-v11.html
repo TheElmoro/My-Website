@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Sina Vahdat | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="fx-pending">
+  <div id="preloader" aria-hidden="true">
+    <div class="loader"></div>
+  </div>
+
+  <!-- المنت cursor از این قسمت به طور کامل حذف شد -->
+  <div id="particles-js" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+
+  <header class="hero" id="home">
+    <nav class="navbar glass-panel" aria-label="Primary navigation">
+      <a href="#home" class="nav-brand">Sina Vahdat</a>
+
+      <button
+        class="mobile-menu-toggle"
+        id="mobileMenuToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-right">
+        <div class="nav-links" id="desktopNav">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#stats" class="nav-link">Stats</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle theme"
+        >
+          <span aria-hidden="true">🌓</span>
+        </button>
+      </div>
+    </nav>
+
+    <div
+      class="mobile-menu"
+      id="mobileMenu"
+      aria-hidden="true"
+    >
+      <div class="mobile-menu-backdrop" data-close-menu></div>
+
+      <div
+        class="mobile-menu-panel glass-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Mobile navigation"
+      >
+        <div class="mobile-menu-top">
+          <span class="mobile-menu-title">Menu</span>
+
+          <button
+            class="mobile-menu-close"
+            id="mobileMenuClose"
+            type="button"
+            aria-label="Close menu"
+          >
+            ✕
+          </button>
+        </div>
+
+        <div class="mobile-menu-links">
+          <a href="#home" class="mobile-nav-link">Home</a>
+          <a href="#about" class="mobile-nav-link">About</a>
+          <a href="#skills" class="mobile-nav-link">Skills</a>
+          <a href="#projects" class="mobile-nav-link">Projects</a>
+          <a href="#stats" class="mobile-nav-link">Stats</a>
+          <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+
+        <div class="mobile-menu-actions">
+          <button
+            id="mobileThemeToggle"
+            class="theme-toggle mobile-theme-toggle"
+            type="button"
+            aria-label="Toggle theme"
+          >
+            <span aria-hidden="true">🌓</span>
+            <span>Toggle Theme</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-content glass-panel">
+      <span class="hero-badge">Frontend Developer • UI Enthusiast</span>
+      <h1>
+        <span id="typing"></span>
+      </h1>
+      <p class="hero-subtitle">I build clean, modern and interactive digital experiences.</p>
+      <p class="hero-description">
+        Passionate about crafting responsive interfaces, polished micro-interactions,
+        and visually engaging web experiences with modern frontend technologies.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary magnetic-btn">View Projects</a>
+        <a href="#contact" class="btn secondary magnetic-btn">Contact Me</a>
+      </div>
+
+      <div class="social-links" aria-label="Social links">
+        <a href="https://github.com/TheElmoro" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="t.me/cumincider" aria-label="Telegram">Telegram</a>
+      </div>
+
+      <div class="hero-mini-stats">
+        <div class="mini-stat glass-panel">
+          <strong>10+</strong>
+          <span>Projects Built</span>
+        </div>
+        <div class="mini-stat glass-panel">
+          <strong>2025</strong>
+          <span>Active Journey</span>
+        </div>
+        <div class="mini-stat glass-panel">
+          <strong>UI</strong>
+          <span>Polished Focus</span>
+        </div>
+        <div class="mini-stat glass-panel">
+          <strong>Clean</strong>
+          <span>Code Style</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <button id="scrollProgress" aria-label="Scroll to top">
+    <svg viewBox="0 0 52 52" aria-hidden="true">
+      <circle cx="26" cy="26" r="22"></circle>
+      <circle class="progress-ring" cx="26" cy="26" r="22"></circle>
+    </svg>
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <main id="mainContent">
+    <section id="about">
+      <div class="section-heading">
+        <span class="section-kicker">About Me</span>
+        <h2>Who I Am</h2>
+        <p class="section-lead">
+          I enjoy turning ideas into clean, meaningful and engaging digital interfaces.
+        </p>
+      </div>
+
+      <div class="about-wrapper">
+        <div class="about-profile glass-panel">
+          <div class="about-avatar-wrap">
+            <div class="about-avatar-ring"></div>
+            <img
+              src="images/portrait.jpg"
+              alt="Portrait of Sina Vahdat"
+              class="about-avatar"
+              width="220"
+              height="220"
+              decoding="async"
+            />
+          </div>
+
+          <div class="about-badges">
+            <span>Creative UI</span>
+            <span>Responsive Design</span>
+            <span>Frontend Focus</span>
+          </div>
+
+          <div class="about-highlights">
+            <div>
+              <strong>Location</strong>
+              <span>Iran / Tehran</span>
+            </div>
+            <div>
+              <strong>Focus</strong>
+              <span>Frontend / UI / Python / AI / ML</span>
+            </div>
+            <div>
+              <strong>Status</strong>
+              <span>Open to Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-info-card glass-panel">
+          <h3>Building modern digital experiences</h3>
+          <p>
+            I’m Sina Vahdat, a frontend-focused developer who enjoys designing and
+            building smooth, modern and visually balanced interfaces. I care about
+            both clean code and the details that make a product feel polished.
+          </p>
+          <p>
+            My goal is not only to make things work, but to create experiences that
+            feel clear, professional and enjoyable across different devices.
+          </p>
+
+          <ul class="about-list">
+            <li>Strong interest in UI polish and interaction design</li>
+            <li>Focused on responsive layouts and clean structure</li>
+            <li>Always improving through practice and experimentation</li>
+          </ul>
+
+          <div class="about-actions">
+            <a href="#projects" class="btn primary magnetic-btn">Explore My Work</a>
+            <a href="#contact" class="btn secondary magnetic-btn">Let's Connect</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-heading">
+        <span class="section-kicker">Skills</span>
+        <h2>What I Work With</h2>
+        <p class="section-lead">
+          A growing toolkit focused on frontend development, interaction quality and practical problem solving.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card glass-panel">
+          <div class="skill-head">
+            <span>HTML</span>
+            <span>27%</span>
+          </div>
+          <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="95">
+            <div class="skill-fill" data-skill="27"></div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-panel">
+          <div class="skill-head">
+            <span>CSS</span>
+            <span>20%</span>
+          </div>
+          <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+            <div class="skill-fill" data-skill="20"></div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-panel">
+          <div class="skill-head">
+            <span>JavaScript</span>
+            <span>14%</span>
+          </div>
+          <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82">
+            <div class="skill-fill" data-skill="14"></div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-panel">
+          <div class="skill-head">
+            <span>Python</span>
+            <span>78%</span>
+          </div>
+          <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78">
+            <div class="skill-fill" data-skill="78"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-heading">
+        <span class="section-kicker">Projects</span>
+        <h2>Selected Work</h2>
+        <p class="section-lead">
+          A few project directions focused on modern frontend presentation, utility and experimentation.
+        </p>
+      </div>
+
+      <div class="portfolio-filter" role="tablist" aria-label="Project filters">
+        <button class="active" data-filter="all" aria-selected="true" type="button">All</button>
+        <button data-filter="frontend" aria-selected="false" type="button">Frontend</button>
+        <button data-filter="artificial intelligence" aria-selected="false" type="button">AI</button>
+        <button data-filter="python / automation" aria-selected="false" type="button">Python</button>
+        <button data-filter="ui / interaction" aria-selected="false" type="button">UI</button>
+      </div>
+
+      <div class="projects-grid">
+        <article
+          class="project-card show spotlight-card gradient-border-card"
+          data-category="frontend"
+          data-project-id="web-project"
+          tabindex="0"
+          role="button"
+          aria-label="Open details for Web Project"
+        >
+          <!-- المان بی‌استفاده‌ی card-spotlight حذف شد -->
+          <div class="project-inner">
+            <span class="project-tag">Frontend</span>
+            <h3>Web Project</h3>
+            <p>Responsive layout with clean visuals and structured modern interface patterns.</p>
+            <div class="project-buttons">
+              <span class="btn small secondary">View Details</span>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="project-card show spotlight-card gradient-border-card"
+          data-category="artificial intelligence"
+          data-project-id="ai-project"
+          tabindex="0"
+          role="button"
+          aria-label="Open details for AI Project"
+        >
+          <!-- المان بی‌استفاده‌ی card-spotlight حذف شد -->
+          <div class="project-inner">
+            <span class="project-tag">AI</span>
+            <h3>AI Project</h3>
+            <p>Concept-driven project focused on intelligent workflows, experiments and future expansion.</p>
+            <div class="project-buttons">
+              <span class="btn small secondary">View Details</span>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="project-card show spotlight-card gradient-border-card"
+          data-category="python / automation"
+          data-project-id="python-project"
+          tabindex="0"
+          role="button"
+          aria-label="Open details for Python Project"
+        >
+          <!-- المان بی‌استفاده‌ی card-spotlight حذف شد -->
+          <div class="project-inner">
+            <span class="project-tag">Python</span>
+            <h3>Python Project</h3>
+            <p>Automation-oriented utility project built around practical ideas and readable implementation.</p>
+            <div class="project-buttons">
+              <span class="btn small secondary">View Details</span>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="project-card show spotlight-card gradient-border-card"
+          data-category="ui / interaction"
+          data-project-id="portfolio-component"
+          tabindex="0"
+          role="button"
+          aria-label="Open details for Portfolio Component"
+        >
+          <!-- المان بی‌استفاده‌ی card-spotlight حذف شد -->
+          <div class="project-inner">
+            <span class="project-tag">UI</span>
+            <h3>Portfolio Component</h3>
+            <p>Interaction-focused component with polished hover effects and presentation quality behavior.</p>
+            <div class="project-buttons">
+              <span class="btn small secondary">View Details</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="stats">
+      <div class="section-heading">
+        <span class="section-kicker">Numbers</span>
+        <h2>Quick Snapshot</h2>
+        <p class="section-lead">
+          A compact overview of activity, consistency and learning momentum.
+        </p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card glass-panel">
+          <strong class="counter" data-target="12">0</strong>
+          <span>Projects</span>
+        </div>
+        <div class="stat-card glass-panel">
+          <strong class="counter" data-target="8">0</strong>
+          <span>Skills</span>
+        </div>
+        <div class="stat-card glass-panel">
+          <strong class="counter" data-target="100">0</strong>
+          <span>Learning Hours</span>
+        </div>
+        <div class="stat-card glass-panel">
+          <strong class="counter" data-target="4">0</strong>
+          <span>Focus Areas</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-heading">
+        <span class="section-kicker">Contact</span>
+        <h2>Let’s Build Something Clean</h2>
+        <p class="section-lead">
+          If you want to collaborate, share feedback, or just connect, feel free to reach out.
+        </p>
+      </div>
+
+      <div class="contact-card glass-panel">
+        <p>
+          I’m always interested in improving, learning, and discussing new frontend ideas.
+        </p>
+
+        <div class="contact-actions">
+          <a href="mailto:sina@example.com" class="btn primary magnetic-btn">Email Me</a>
+          <a href="https://github.com/TheElmoro" class="btn secondary magnetic-btn">GitHub Profile</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div
+    class="project-modal"
+    id="projectModal"
+    aria-hidden="true"
+  >
+    <div class="project-modal-backdrop" data-close-modal></div>
+
+    <div
+      class="project-modal-dialog glass-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="projectModalTitle"
+    >
+      <button
+        class="project-modal-close"
+        id="modalCloseBtn"
+        type="button"
+        aria-label="Close project details"
+      >
+        ✕
+      </button>
+
+      <div class="project-modal-top">
+        <div>
+          <span class="project-modal-kicker" id="projectModalCategory">Category</span>
+          <h3 id="projectModalTitle">Project Title</h3>
+        </div>
+
+        <span class="project-status" id="projectModalStatus">Completed</span>
+      </div>
+
+      <p class="project-modal-description" id="projectModalDescription">
+        Project description goes here.
+      </p>
+
+      <div class="project-modal-meta">
+        <div>
+          <strong>Year</strong>
+          <span id="projectModalYear">2025</span>
+        </div>
+      </div>
+
+      <div class="tech-stack" id="projectModalTech"></div>
+
+      <ul class="project-features" id="projectModalFeatures"></ul>
+
+      <div class="project-modal-actions">
+        <a
+          id="projectModalLive"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn primary"
+        >
+          Live Demo
+        </a>
+        <a
+          id="projectModalGithub"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn secondary"
+        >
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
